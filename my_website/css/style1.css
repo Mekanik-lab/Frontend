@@ -1,0 +1,130 @@
+body {
+  background-image: url(..//photos/tlo1.png);
+  background-size: cover;
+}
+
+.header {
+  height: 350px;
+  width: 100%;
+  color: white;
+  font-size: 60px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+.Sun img {
+  height: 200px;
+  width: 195px;
+  float: right;
+  filter: drop-shadow(0 0 0 rgb(0, 0, 0));
+  transition: filter 0.3s ease;
+}
+
+.Sun img:hover {
+  filter: drop-shadow(0 0 17px rgba(255, 204, 51));
+  transition: filter 0.5s ease;
+}
+
+.Merkury img {
+  height: 200px;
+  width: 200px;
+  float: right;
+  filter: drop-shadow(0 0 0 rgb(0, 0, 0));
+  transition: filter 0.3s ease;
+}
+
+.Merkury img:hover {
+  filter: drop-shadow(0 0 17px rgba(50, 255, 255));
+  transition: filter 0.5s ease;
+}
+
+.Wenus img {
+  height: 200px;
+  width: 200px;
+  float: right;
+  filter: drop-shadow(0 0 0 rgb(0, 0, 0));
+  transition: filter 0.3s ease;
+}
+
+.Wenus img:hover {
+  filter: drop-shadow(0 0 17px rgba(244, 94, 31));
+  transition: filter 0.5s ease;
+}
+
+.Ziemia img {
+  height: 200px;
+  width: 200px;
+  float: right;
+  filter: drop-shadow(0 0 0 rgb(0, 0, 0));
+  transition: filter 0.3s ease;
+}
+
+.Ziemia img:hover {
+  filter: drop-shadow(0 0 17px rgba(0, 200, 0));
+  transition: filter 0.5s ease;
+}
+
+.Mars img {
+  height: 200px;
+  width: 200px;
+  float: right;
+  filter: drop-shadow(0 0 0 rgb(0, 0, 0));
+  transition: filter 0.3s ease;
+}
+
+.Mars img:hover {
+  filter: drop-shadow(0 0 17px rgba(233, 107, 57));
+  transition: filter 0.5s ease;
+}
+
+.Jowisz img {
+  height: 200px;
+  width: 200px;
+  float: right;
+  filter: drop-shadow(0 0 0 rgb(0, 0, 0));
+  transition: filter 0.3s ease;
+}
+
+.Jowisz img:hover {
+  filter: drop-shadow(0 0 17px rgba(233, 233, 233));
+  transition: filter 0.5s ease;
+}
+
+.Saturn img {
+  height: 300px;
+  width: 300px;
+  float: right;
+  filter: drop-shadow(0 0 0 rgb(0, 0, 0));
+  transition: filter 0.3s ease;
+}
+
+.Saturn img:hover {
+  filter: drop-shadow(0 0 17px rgba(217, 186, 140));
+  transition: filter 0.5s ease;
+}
+
+.Uran img {
+  height: 300px;
+  width: auto;
+  float: right;
+  filter: drop-shadow(0 0 0 rgb(0, 0, 0));
+  transition: filter 0.3s ease;
+}
+
+.Uran img:hover {
+  filter: drop-shadow(0 0 17px rgba(65, 223, 223));
+  transition: filter 0.5s ease;
+}
+
+.Neptun img {
+  height: 163px;
+  width: 105px;
+  float: right;
+  filter: drop-shadow(0 0 0 rgb(0, 0, 0));
+  transition: filter 0.3s ease;
+}
+
+.Neptun img:hover {
+  filter: drop-shadow(0 0 17px rgba(16, 92, 255));
+  transition: filter 0.5s ease;
+}
