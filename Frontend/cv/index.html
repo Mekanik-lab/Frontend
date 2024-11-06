@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <title>CV | APP</title>
+</head>
+<body>
+    <div id="container">
+        <header id="container__header" class="container__section">
+            <img id="container__header-avatar" src="images/avatar.jfif" alt="Avatar Dawida Strzelecki">
+            <div id="container__link" class="container__link">
+                <h1>Dawid Strzelecki</h1>
+                <a id="container__link-download" href="./download/cv.txt" download="cv.txt">Pobierz CV</a>
+            </div>
+            <address>
+                <ul id="container__contact-list" >
+                    <li class="container__contact-item">
+                        <b>Numer telefonu: </b><a href="tel:123456789">123 456 789</a>
+                    </li>
+                    <li class="container__contact-item">
+                        <b>Email: </b><a href="mailto:dawid.strzelecki@gmail.com">dawid.strzelecki@gmail.com</a>
+                    </li>
+                    <li class="container__contact-item">
+                        <b>Data urodzenia: </b> 03-07-2000
+                    </li>
+                    <li class="container__contact-item">
+                        <b>Miejsce zamieszkania: </b>Małogoszcz
+                    </li>
+                </ul>
+            </address>
+        </header>
+        <main>
+            <section id="container__section-about-me" class="container__section container__section--about-me">
+                <h1><mark>O mnie</mark></h1>
+                <p>Mam na imię <b>Dawid</b>. Uczę się od dwóch lat programować.
+                    Uczęszczam do drugiej klasy technikum na profilu
+                    programistycznym. Umiem podstawy HTML a także CSS.
+                    Teraz zamierzam się nauczyć kolejnych właściwości CSS oraz
+                    powoli zaczynam się uczyć JavaScript. Po skończeniu szkoły
+                    chcę zostać Frontend Developerem.
+                </p>
+            </section>
+            <section id="container__section-languages" class="container__section container__section--languages">
+                <h1><mark>Języki</mark></h1>
+                <ul id="container__languages-list" class="container__languages-list">
+                    <li id="container__language-item">Polski</li>
+                    <li id="container__language-item">Angielski - A2/B1</li>
+                </ul>
+            </section>
+            <section id="container__section-interests" class="container__section container__section--interests">
+                <h1><mark>Zainteresowania</mark></h1>
+                <ul id="container__interests-list">
+                    <li id="container__interests-item" class="container__interests-item">
+                        <h2>Bieganie</h2>
+                        <br>
+                        <img src="images/running.jpg" alt="Bieganie">
+                    </li>
+                    <li id="container__interests-item" class="container__interests-item">
+                        <h2>Czytanie</h2>
+                        <br>
+                        <img src="images/reading.png" alt="Czytanie">
+                    </li>
+                    <li id="container__interests-item" class="container__interests-item">
+                        <h2>Piłka nożna</h2>
+                        <br>
+                        <img src="images/football.png" alt="Piłka nożna">
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <button id="clear--button">Wyczyść kartę</button>
+</body>
+</html>
