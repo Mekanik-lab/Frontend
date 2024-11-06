@@ -1,0 +1,22 @@
+body{
+    background-image: url(..//photos/tlo1.png)
+}
+
+a{
+    position: fixed; 
+    bottom: 20px; 
+    left: 20px; 
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    border: 1px solid #ffffff; 
+    border-radius: 20px; 
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+a:hover{
+    background-color: rgba(255, 255, 255, 0.7); 
+    color: #000000; 
+}

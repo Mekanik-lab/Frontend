@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(31, 35, 75);
+    border-radius: 12px;
+    margin-right: 3px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__button-container {
+    position: relative; 
+    margin-left: 15px; 
+}
+
+.nav__item {
+    list-style-type: none;
+}
+
+.nav__list {
+    display: none;
+    background-color: rgb(231, 230, 230);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    padding: 0;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 15px;
+
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(231, 230, 230);
+}
+
+button:hover {
+    background-color: rgb(199, 197, 197);
+}
+
+.nav__button-container button:hover + .nav__list,
+.nav__button-container button:focus + .nav__list {
+    display: block;
+}
+
+.nav__button-container{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.nav__button-container:nth-child(3) .nav__list {
+    left: auto; 
+    right: 0;   
+}
+
+a:hover {
+    background-color: rgb(199, 197, 197);
+    border-radius: 12px;
+}
+
+/*
+1. Resetowanie stylów:
+* {
+    box-sizing: border-box; 
+    // Ustawia, że szerokość i wysokość elementów uwzględniają padding i border.
+}
+
+2. Styl nawigacji:
+nav {
+    width: 100%; 
+    // Szerokość: 100% ekranu.
+    
+    background-color: rgb(31, 35, 75); 
+    // Tło: ciemnoniebieskie.
+    
+    border-radius: 12px; 
+    // Zaokrąglone rogi.
+    
+    margin-right: 3px; 
+    // Margines po prawej stronie.
+    
+    position: relative; 
+    // Umożliwia umiejscowienie absolutnych elementów.
+    
+    font-family: Arial, Helvetica, sans-serif; 
+    // Ustawia czcionkę na Arial z alternatywami.
+    
+    font-size: 17px; 
+    // Ustawia rozmiar czcionki.
+    
+    height: 60px; 
+    // Wysokość: 60px.
+    
+    display: flex; 
+    // Używa flexboxa do ustawienia elementów w rzędzie.
+    
+    justify-content: flex-end; 
+    // Wyrównuje elementy do prawej strony.
+}
+    
+3. Kontener dla przycisków:
+.nav__button-container {
+    position: relative; 
+    // Umożliwia umiejscowienie absolutnych elementów.
+    
+    margin-left: 15px; 
+    // Margines z lewej dla odstępu między przyciskami.
+}
+
+4. Elementy listy:
+.nav__item {
+    list-style-type: none; 
+    // Usuwa punkty listy.
+}
+
+5. Rozwijana lista:
+.nav__list {
+    display: none; 
+    // Domyślnie ukryta.
+    
+    background-color: rgb(231, 230, 230); 
+    // Tło: jasnoszare.
+    
+    position: absolute; 
+    // Umożliwia pozycjonowanie w stosunku do kontenera.
+    
+    top: 100%; 
+    // Ustawia pod przyciskiem.
+    
+    left: 0; 
+    // Ustawia na lewą krawędź kontenera.
+    
+    width: 150px; 
+    // Szerokość: 150px.
+    
+    padding: 0; 
+    // Ustawia padding na 0.
+    
+    border-radius: 10px; 
+    // Zaokrągla rogi listy.
+    
+    z-index: 999; 
+    // Ustawia, aby lista była nad innymi elementami.
+}
+
+6. Linki:
+a {
+    text-decoration: none; 
+    // Usuwa podkreślenie z linków.
+    
+    color: black; 
+    // Ustawia czarny kolor tekstu.
+    
+    display: block; 
+    // Umożliwia klikanie w cały obszar linku.
+    
+    padding: 10px 15px; 
+    // Dodaje padding wewnętrzny dla linków.
+}
+
+7. Przyciski:
+button {
+    width: 100px; 
+    // Ustawia szerokość na 100px.
+    
+    height: 50px; 
+    // Ustawia wysokość na 50px.
+    
+    border: none; 
+    // Usuwa domyślną ramkę.
+    
+    border-radius: 10px; 
+    // Zaokrągla rogi przycisków.
+    
+    cursor: pointer; 
+    // Zmienia kursor na wskaźnik.
+    
+    background-color: rgb(231, 230, 230); 
+    // Ustawia tło przycisków.
+}
+
+8. Efekt hover na przyciskach:
+button:hover {
+    background-color: rgb(199, 197, 197); 
+    // Zmienia tło przycisku na jaśniejsze przy najechaniu.
+}
+
+9. Rozwijana lista na hover i focus:
+.nav__button-container button:hover + .nav__list,
+.nav__button-container button:focus + .nav__list {
+    display: block; 
+    // Wyświetla rozwijaną listę po najechaniu lub kliknięciu.
+}
+
+10. Efekt hover na linkach:
+a:hover {
+    background-color: rgb(199, 197, 197); 
+    // Zmienia tło linku na jaśniejsze przy najechaniu.
+    
+    border-radius: 12px; 
+    // Zaokrągla rogi linku w stanie hover.
+}
+
+nav__button-container:nth-child(3) .nav__list {
+    left: auto; 
+    right: 0;   
+}
+
+Ustawienia dla rozwijanej listy w trzecim kontenerze przycisku w nawigacji:
+- .nav__button-container:nth-child(3): Wybiera trzeci kontener przycisku w menu.
+- .nav__list: Selekcjonuje rozwijaną listę w tym kontenerze.
+  
+left: auto; 
+// Ustawia położenie rozwijanej listy w poziomie na wartość automatyczną, 
+// co oznacza, że nie będzie przymocowana do lewej krawędzi kontenera.
+
+right: 0; 
+// Ustawia położenie rozwijanej listy na 0 pikseli od prawej krawędzi kontenera, 
+// co powoduje, że lista będzie wyrównana do prawej strony.
+*/

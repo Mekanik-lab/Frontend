@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Task DOM API</title>
+    <style>
+        button{
+            display: flex;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 8px;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+        button:active{
+            transform: scale(0.95);
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.7);
+        }
+
+        h1{
+            font-size: 20px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <!--Zadanie pierwsze, znalezienie elementu i wyświetlenie teskstu z elementu-->
+    <button onclick="findText()">Wyświetl teskt z elementu</button>
+    <p id="text">Uczę się JS!</p>
+    <hr>
+    <!--Zadanie drugie, zamiana tesktu-->
+    <button onclick="changeText()">Zmień teskt</button>
+    <h1 id="changeText">Uczę się DOM API</h1>
+    <hr>
+    <!--Zadanie trzecie, zmiana stylu elementu HTML-->
+    <button onclick="changeStyleOfDiv()">Zmiana stylu elementu html</button>
+    <br>
+    <div id="myDiv">DIV</div>
+    <hr>
+    <!--Zadanie piąte, usuwanie elementu ze strony-->
+    <button id="secondButton" onclick="removeElementFromWebsite()">Usuń element ze strony</button>
+    <p id="removeElementFromWebsite">Ten teskt zostanie usunięty</p>
+    <hr>
+    <!--Zadanie szóste, wyświetlanie tesktu wprowadzonego przez użytkownika-->
+    <label for="input">Wprowadź teskt:</label><br>
+    <input id="input" type="text" placeholder="Wpisz coś tutaj...">
+    <button id="showTextFromUser" onclick="showTextFromUser()">Pokaż wpisany teskt</button>
+    <hr>
+    <!--Zadanie czwarte, dodanie nowego elementu na stronę-->
+    <button id="button">Dodaj nowy element na stronę</button>
+    <script>
+        document.getElementById("button").addEventListener("click", function (){
+            const newHeader = document.createElement("h1");
+            newHeader.textContent = "Witaj";
+            document.body.appendChild(newHeader);
+        });
+    </script>
+</body>
+</html>
