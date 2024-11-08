@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Formularz</title>
+</head>
+<body>
+    <main id="main">
+        <section id="card">
+            <h1>Witaj w najnowszym wydaniu!</h1>
+            <h2 id="text">
+                Z radością dzielimy się z Tobą najnowszymi informacjami i ekskluzywnymi ofertami. 
+                W tym miesiącu przygotowaliśmy dla Ciebie:
+            </h2>
+            <ul>
+                <li><strong>Nowości produktowe</strong> - odkryj naszą najnowszą kolekcję, która już teraz dostępna jest w sklepie!</li>
+                <li><strong>Porady i inspiracje</strong> - przeczytaj, jak nasze produkty mogą ułatwić Ci codzienne życie.</li>
+                <li><strong>Specjalne promocje</strong> - tylko dla subskrybentów newslettera! Nie przegap okazji.</li>
+            </ul>
+            <h2>Dziękujemy, że jesteś z nami! Jeśli masz jakiekolwiek pytania lub sugestie, śmiało się z nami skontaktuj.
+                <br>
+                <br>
+                Pozdrawiamy,
+                <br>
+                Zespół [Nazwa Firmy]</h2>
+        </section>
+        <div id="button__container">
+            <button id="button__open--form">Zapisz się na newsletter</button>
+        </div>
+    </main> 
+    <div id="overlay"></div>
+    <div id="form">
+        <form id="newsletter">
+            <label for="name">Imię</label><br>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Adres email</label><br>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <button type="submit" id="button--save" class="button">Zapisz się</button>
+            <br>
+            <button type="button" id="button--close" class="button">Anuluj</button>
+        </form>
+    </div>
+</body>
+</html>

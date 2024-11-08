@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#card {
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #007BFF;
+}
+
+#button__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#button__open--form {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#button__open--form:active {
+    transform: scale(0.94);
+}
+
+/* FORM */
+
+#form {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    height: auto;
+    width: 550px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+label {
+    font-size: 28px;
+    margin-bottom: -24px;
+}
+
+input, input:focus {
+    width: 300px;
+    height: 50px;
+    border-radius: 16px;
+    border: 1px solid white;
+    outline: none;
+    padding: 12px;
+    font-size: 24px;
+}
+
+#email {
+    font-size: 20px;
+}
+
+.button {
+    font-size: 20px;
+    height: 40px;
+    width: 150px;
+    padding: 6px 6px;
+    border-radius: 12px;
+    background-color: rgb(212, 212, 212);
+    border: 1px solid rgb(212, 212, 212);
+    transition: transform 0.2s ease;
+}
+
+.button:active {
+    transform: scale(0.94);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#button-save, #button--cancel {
+    margin-bottom: 0;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
