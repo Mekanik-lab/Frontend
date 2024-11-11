@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <div id="calculator">
+            <input id="calculator__screen" name="screen" type="text" disabled>
+            <button onclick="squareRoot()" class="calculator__button" id="calculator__root"><sup>2</sup>/x</button>
+            <button onclick="power()" class="calculator__button" id="calculator__square">x<sup>2</sup></button>
+            <button onclick="clearScreen()" class="calculator__button">C</button>
+            <button onclick="removeSigns()" class="calculator__button" id="calculator__delete"><img src="./images/delete.svg" alt="Delete"></button>
+            <button onclick="appendNumber('7')" class="calculator__button">7</button>
+            <button onclick="appendNumber('8')" class="calculator__button">8</button>
+            <button onclick="appendNumber('9')" class="calculator__button">9</button>
+            <button onclick="appendOperation('/')" class="calculator__button" id="calculator__divide">/</button>
+            <button onclick="appendNumber('4')" class="calculator__button">4</button>
+            <button onclick="appendNumber('5')" class="calculator__button">5</button>
+            <button onclick="appendNumber('6')" class="calculator__button">6</button>
+            <button onclick="appendOperation('x')" class="calculator__button" id="calculator__multiple">X</button>
+            <button onclick="appendNumber('1')" class="calculator__button">1</button>
+            <button onclick="appendNumber('2')" class="calculator__button">2</button>
+            <button onclick="appendNumber('3')" class="calculator__button">3</button>
+            <button onclick="appendOperation('-')" class="calculator__button" id="calculator__minus">-</button>
+            <button onclick="appendNumber('0')" class="calculator__button" id="calculator__zero">0</button>
+            <button onclick="appendComma()" class="calculator__button" id="calculator__comma">.</button>
+            <button onclick="calculate()" class="calculator__button" id="calculator__equal">=</button>
+            <button onclick="appendOperation('+')" class="calculator__button" id="calculator__plus">+</button>
+        </div>
+    </main>
+</body>
+</html>
