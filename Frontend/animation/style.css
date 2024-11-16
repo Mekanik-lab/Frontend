@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(100deg ,rgb(40, 138, 230), rgb(48, 88, 175));
+    overflow: hidden;
+}
+
+#snow__container {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.flake__container {
+    position: absolute;
+    padding: 0 50px;
+    top: -10%;
+    animation: fall 10s 0s 1 linear forwards;
+}
+
+.flake__container img {
+    position: absolute;
+    padding: 0px 12px;
+    animation: rotate 6s 0s infinite linear forwards,
+               leftToRight 2s 0s infinite ease-in-out alternate;
+}
+
+@keyframes leftToRight {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fall {
+    from {
+        top: -10%;
+    }
+
+    to {
+        top: 100%;
+    }
+}
