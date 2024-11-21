@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wisielec</title>
+</head>
+<body>
+    <div id="snow__container"></div> <!-- Kontener śniegu -->
+    
+    <div id="password">
+        <h1>_ _ _ _ _ _ _ _ _ _ _ _ _</h1>
+    </div>
+
+    <main id="main">
+        <div id="hanged--man">
+            <svg xmlns="http://www.w3.org/2000/svg" id="hangmanSVG" width="600" height="600">
+                <!-- Podstawa szubienicy - trójkąt -->
+                <line id="base" x1="150" y1="300" x2="250" y2="300" class="gallows"/>
+                <line id="left-support" x1="150" y1="300" x2="200" y2="230" class="gallows"/>
+                <line id="right-support" x1="250" y1="300" x2="200" y2="230" class="gallows"/>
+                <line id="vertical-support" x1="200" y1="230" x2="200" y2="50" class="gallows"/>
+                <line id="horizontal-beam" x1="198.5" y1="50" x2="300" y2="50" class="gallows"/>
+                <line id="noose" x1="300" y1="48.5" x2="300" y2="130" class="part"/>
+                <circle id="head" cx="300" cy="150" r="20" class="part"/>
+                <line id="body" x1="300" y1="170" x2="300" y2="230" class="part"/>
+                <line id="left-arm" x1="300" y1="180" x2="270" y2="200" class="part"/>
+                <line id="right-arm" x1="300" y1="180" x2="330" y2="200" class="part"/>
+                <line id="left-leg" x1="300" y1="230" x2="270" y2="270" class="part"/>
+                <line id="right-leg" x1="300" y1="230" x2="330" y2="270" class="part"/>
+            </svg>
+        </div>
+
+        <div id="keyboard">
+            <div class="keyboard--grid">
+                <!-- Przyciski liter -->
+                <button class="letters">A</button>
+                <button class="letters">Ą</button>
+                <button class="letters">B</button>
+                <button class="letters">C</button>
+                <button class="letters">Ć</button>
+                <button class="letters">D</button>
+                <button class="letters">E</button>
+                <button class="letters">Ę</button>
+                <button class="letters">F</button>
+                <button class="letters">G</button>
+                <button class="letters">H</button>
+                <button class="letters">I</button>
+                <button class="letters">J</button>
+                <button class="letters">K</button>
+                <button class="letters">L</button>
+                <button class="letters">Ł</button>
+                <button class="letters">M</button>
+                <button class="letters">N</button>
+                <button class="letters">Ń</button>
+                <button class="letters">O</button>
+                <button class="letters">Ó</button>
+                <button class="letters">P</button>
+                <button class="letters">Q</button>
+                <button class="letters">R</button>
+                <button class="letters">S</button>
+                <button class="letters">Ś</button>
+                <button class="letters">T</button>
+                <button class="letters">U</button>
+                <button class="letters">V</button>
+                <button class="letters">W</button>
+                <button class="letters">X</button>
+                <button class="letters">Y</button>
+                <button class="letters">Z</button>
+                <button class="letters">Ż</button>
+                <button class="letters">Ź</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Skrypty JavaScript -->
+    <script src="./js/snow.js"></script> <!-- Skrypt śniegu -->
+    <script src="./js/app.js"></script>  <!-- Skrypt gry -->
+</body>
+</html>
