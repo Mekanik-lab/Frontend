@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Validator</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Check your password</h1>
+
+    </header>
+    <main class="main">
+        <div id="input_container">
+            <input id="input" type="password" name="password" placeholder="Enter your password here..." maxlength="50">
+            <button class="btn"><img src="./images/show.png" alt="show password" class="img"></button>
+        </div>
+        <ul id="requirements_list">
+            <h2 class="list_item" id="first_item"> Minimum eight characters</h2>
+            <h2 class="list_item" id="second_item"> At least one uppercase letter</h2>
+            <h2 class="list_item" id="third_item"> At least one lowercase letter</h2>
+            <h2 class="list_item" id="fourth_item"> At least one special character</h2>
+        </ul>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
