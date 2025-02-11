@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tworzenie Postaci</title>
+</head>
+<body>
+    <h1>Tworzenie Postaci</h1>
+    <form id="createForm">
+        <label for="name">Imię: </label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="type">Typ: </label>
+        <input type="text" id="type" required><br><br>
+
+        <div id="extraFields"></div><br>
+
+        <label for="objectType">Wybierz typ obiektu: </label>
+        <select id="objectType">
+            <!-- Opcje będą dodawane dynamicznie -->
+        </select><br><br>
+
+        <button type="submit">Utwórz</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
